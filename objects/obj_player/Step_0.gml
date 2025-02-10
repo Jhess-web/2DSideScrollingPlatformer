@@ -71,8 +71,8 @@ else
 	/// @DnDParent : 449BD7B1
 	/// @DnDArgument : "var" "move_y"
 	/// @DnDArgument : "op" "1"
-	/// @DnDArgument : "value" "4"
-	if(move_y < 4)
+	/// @DnDArgument : "value" "10"
+	if(move_y < 10)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
