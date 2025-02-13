@@ -23,9 +23,9 @@ draw_self();
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 4CB44E65
-/// @DnDArgument : "font" "Open_sans"
-/// @DnDSaveInfo : "font" "Open_sans"
-draw_set_font(Open_sans);
+/// @DnDArgument : "font" "open_sans1"
+/// @DnDSaveInfo : "font" "open_sans1"
+draw_set_font(open_sans1);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1

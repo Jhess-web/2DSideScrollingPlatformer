@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"Open_sans",
+  "%Name":"open_sans1",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":17,
@@ -902,7 +902,7 @@
   "last":0,
   "lineHeight":22,
   "maintainGms1Font":false,
-  "name":"Open_sans",
+  "name":"open_sans1",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",
