@@ -14,8 +14,9 @@ draw_set_font(open_sans1);
 /// @DnDVersion : 1.1
 /// @DnDHash : 78154613
 /// @DnDArgument : "halign" "fa_center"
+/// @DnDArgument : "valign" "fa_middle"
 draw_set_halign(fa_center);
-draw_set_valign(fa_top);
+draw_set_valign(fa_middle);
 
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1

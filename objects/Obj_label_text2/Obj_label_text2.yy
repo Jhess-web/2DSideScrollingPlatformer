@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"Obj_label_text2",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_label_parent","path":"objects/Obj_label_parent/Obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/Obj_label_parent/Obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"This Is my Story",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
