@@ -189,7 +189,7 @@
           2,0,-2147483648,-56,0,-24,-2147483648,-6,0,-19,-2147483648,-2,0,-206,-2147483648,-53,0,-9,1,-23,-2147483648,
           -6,0,-13,-2147483648,-2,0,-185,-2147483648,-7,1,-15,-2147483648,-56,0,-33,-2147483648,-7,0,-5,-2147483648,
           -5,0,-67,-2147483648,-10,1,-139,-2147483648,-47,0,-40,-2147483648,-7,0,-237,-2147483648,-29,0,-490,-2147483648,
-          -313,1,
+          -51,1,7,0,1,1,0,1,1,0,-74,1,-12,0,-29,1,-3,0,-24,1,-10,0,-41,1,-27,0,-31,1,-4,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
         {"$GMRInstance":"","%Name":"inst_181E67C5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_181E67C5","objectId":{"name":"Obj_background","path":"objects/Obj_background/Obj_background.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":37.0,"scaleY":12.0,"x":0.0,"y":0.0,},
