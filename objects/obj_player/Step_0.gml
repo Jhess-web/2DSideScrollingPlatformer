@@ -61,6 +61,11 @@ if ((l4ECAF6F6_0 > 0))
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
 		move_y = -jump_speed;
+	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 00CF7066
+		/// @DnDParent : 40DEDB22
 	}
 }
 
