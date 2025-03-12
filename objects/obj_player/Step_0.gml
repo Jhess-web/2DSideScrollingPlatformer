@@ -66,6 +66,9 @@ if ((l4ECAF6F6_0 > 0))
 		/// @DnDVersion : 1.1
 		/// @DnDHash : 00CF7066
 		/// @DnDParent : 40DEDB22
+		/// @DnDArgument : "soundid" "Jump"
+		/// @DnDSaveInfo : "soundid" "Jump"
+		audio_play_sound(Jump, 0, 0, 1.0, undefined, 1.0);
 	}
 }
 
