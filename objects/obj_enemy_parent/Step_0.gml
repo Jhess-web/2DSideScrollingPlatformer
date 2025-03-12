@@ -41,14 +41,16 @@ if ((l4ECAF6F6_0 > 0))
 	/// @DnDVersion : 1
 	/// @DnDHash : 4ABD9D83
 	/// @DnDComment : Jump!
+	/// @DnDDisabled : 1
 	/// @DnDParent : 40DEDB22
 	/// @DnDArgument : "expr" "-jump_speed"
 	/// @DnDArgument : "var" "move_y"
-	move_y = -jump_speed;
+	
 	
 	/// @DnDAction : YoYo Games.Collisions.If_Object_At
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 5A46ABC0
+	/// @DnDComment : Is there a wall
 	/// @DnDParent : 40DEDB22
 	/// @DnDArgument : "x" "x + (25 * sign(move_x))"
 	/// @DnDArgument : "y_relative" "1"
@@ -70,14 +72,24 @@ if ((l4ECAF6F6_0 > 0))
 	/// @DnDAction : YoYo Games.Collisions.If_Object_At
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 54F60D12
+	/// @DnDComment : Is there a gap next to me
 	/// @DnDParent : 40DEDB22
-	/// @DnDArgument : "x" "x * (30 * sign(move_x))"
-	/// @DnDArgument : "y" "y + 50"
+	/// @DnDArgument : "x" "x + (30 * sign(move_x))"
+	/// @DnDArgument : "y" "y + 24"
 	/// @DnDArgument : "object" "collision_tilemap"
 	/// @DnDArgument : "not" "1"
-	var l54F60D12_0 = instance_place(x * (30 * sign(move_x)), y + 50, [collision_tilemap]);
+	var l54F60D12_0 = instance_place(x + (30 * sign(move_x)), y + 24, [collision_tilemap]);
 	if (!(l54F60D12_0 > 0))
 	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 1AC5F555
+		/// @DnDComment : reverse movement
+		/// @DnDParent : 54F60D12
+		/// @DnDArgument : "expr" "move_x*-1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x*-1;
+	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 314E5A7D
@@ -106,7 +118,15 @@ else
 	/// @DnDArgument : "value" "10"
 	if(move_y < 10)
 	{
-	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 23B2EF40
+		/// @DnDComment : add gravity
+		/// @DnDParent : 6FADA27C
+		/// @DnDArgument : "expr" "1"
+		/// @DnDArgument : "expr_relative" "1"
+		/// @DnDArgument : "var" "move_y"
+		move_y += 1;
 	}
 }
 
