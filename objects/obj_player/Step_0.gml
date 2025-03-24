@@ -2,9 +2,31 @@
 /// @DnDVersion : 1
 /// @DnDHash : 6B784A8D
 /// @DnDComment : 1 would be pressing right$(13_10)-1 would be pressing left$(13_10)0 would be no input
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "keyboard_check(vk_right)-keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
-move_x = keyboard_check(vk_right)-keyboard_check(vk_left);
+
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 04F2EEC8
+/// @DnDArgument : "expr" "keyboard_check(vk_left)||(gamepad_button_check(0,gp_padl)||(gamepad_axis_value(0,gp_axislh)<-0.2))"
+/// @DnDArgument : "var" "controls_input_left"
+controls_input_left = keyboard_check(vk_left)||(gamepad_button_check(0,gp_padl)||(gamepad_axis_value(0,gp_axislh)<-0.2));
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 2C15B3E4
+/// @DnDArgument : "expr" "keyboard_check(vk_right)||(gamepad_button_check(0,gp_padr)||(gamepad_axis_value(0,gp_axislh)>0.2))"
+/// @DnDArgument : "var" "controls_input_right"
+controls_input_right = keyboard_check(vk_right)||(gamepad_button_check(0,gp_padr)||(gamepad_axis_value(0,gp_axislh)>0.2));
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 4E3B0DE3
+/// @DnDArgument : "expr" "controls_input_right-controls_input_left"
+/// @DnDArgument : "var" "move_x"
+move_x = controls_input_right-controls_input_left;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
@@ -59,6 +81,33 @@ if ((l4ECAF6F6_0 > 0))
 		/// @DnDVersion : 1.1
 		/// @DnDHash : 00CF7066
 		/// @DnDParent : 40DEDB22
+		/// @DnDArgument : "soundid" "Jump"
+		/// @DnDSaveInfo : "soundid" "Jump"
+		audio_play_sound(Jump, 0, 0, 1.0, undefined, 1.0);
+	}
+
+	/// @DnDAction : YoYo Games.Gamepad.If_Gamepad_Button_Pressed
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 716EF7B1
+	/// @DnDParent : 4ECAF6F6
+	/// @DnDArgument : "btn" "gp_face1"
+	var l716EF7B1_0 = 0;
+	var l716EF7B1_1 = gp_face1;
+	if(gamepad_is_connected(l716EF7B1_0) && gamepad_button_check_pressed(l716EF7B1_0, l716EF7B1_1))
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 7B64CA69
+		/// @DnDComment : Jump!
+		/// @DnDParent : 716EF7B1
+		/// @DnDArgument : "expr" "-jump_speed"
+		/// @DnDArgument : "var" "move_y"
+		move_y = -jump_speed;
+	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 32793EAB
+		/// @DnDParent : 716EF7B1
 		/// @DnDArgument : "soundid" "Jump"
 		/// @DnDSaveInfo : "soundid" "Jump"
 		audio_play_sound(Jump, 0, 0, 1.0, undefined, 1.0);
