@@ -73,6 +73,7 @@
     {"id":{"name":"Spr_player_jump","path":"sprites/Spr_player_jump/Spr_player_jump.yy",},},
     {"id":{"name":"Spr_player_walking1","path":"sprites/Spr_player_walking1/Spr_player_walking1.yy",},},
     {"id":{"name":"Spr_player_walking2","path":"sprites/Spr_player_walking2/Spr_player_walking2.yy",},},
+    {"id":{"name":"spr_temp_death_zone","path":"sprites/spr_temp_death_zone/spr_temp_death_zone.yy",},},
     {"id":{"name":"spr_tileset1","path":"sprites/spr_tileset1/spr_tileset1.yy",},},
     {"id":{"name":"spr_tileset2","path":"sprites/spr_tileset2/spr_tileset2.yy",},},
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
